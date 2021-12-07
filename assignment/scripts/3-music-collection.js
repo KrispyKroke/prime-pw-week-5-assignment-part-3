@@ -27,3 +27,5 @@ function showCollection(array) {
     console.log(`${array[album].title} by ${array[album].artist}, published in ${array[album]["year published"]}`);
   }
 }
+
+showCollection(collection);
