@@ -29,3 +29,13 @@ function showCollection(array) {
 }
 
 showCollection(collection);
+
+function findByArtist(musician) {
+  let array = [];
+  for (let album in collection) {
+    if (collection[album].artist === musician) {
+      array.push(collection[album]);
+    }
+  }
+  return array;
+}
