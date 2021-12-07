@@ -39,3 +39,6 @@ function findByArtist(musician) {
   }
   return array;
 }
+
+console.log(findByArtist("Tame Impala"));
+console.log(findByArtist("Giraffage"));
