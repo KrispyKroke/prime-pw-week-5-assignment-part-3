@@ -42,3 +42,22 @@ function findByArtist(musician) {
 
 console.log(findByArtist("Tame Impala"));
 console.log(findByArtist("Giraffage"));
+
+function search(obj = {}) {
+  let array = [];
+  if (Object.keys(obj).length !== 0) {
+  for (let album in collection) {
+    if (obj['artist'] === collection[album]['artist'] && obj['year'] === collection[album]["year published"]) {
+      array.push(collection[album]);
+    }
+    }
+    return array;
+  } else {
+    return collection;
+  }
+  }
+
+console.log(search({artist: "Ray Charles", year: 1957}));
+console.log(search({artist: "Tame Impala", year: 2015}));
+console.log(search());
+console.log(search({}));
