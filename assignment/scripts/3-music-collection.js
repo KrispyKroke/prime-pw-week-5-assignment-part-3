@@ -20,3 +20,10 @@ console.log(addToCollection("King Krule", "King Krule", 2011));
 console.log(addToCollection("Death of a Party Girl", "TV Girl", 2018));
 
 console.log(collection);
+
+function showCollection(array) {
+  console.log(array.length + " albums in the collection.");
+  for (let album in array) {
+    console.log(`${array[album].title} by ${array[album].artist}, published in ${array[album]["year published"]}`);
+  }
+}
